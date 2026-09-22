@@ -1,144 +1,154 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Especifica la versión estándar de HTML5 -->
+<html lang="es"> <!-- Declara el lenguaje principal del sitio en español -->
 <head>
-<meta charset="UTF-8">
-<title>Tradiciones, Mitos y Realidades - Mes Patrio</title>
+<meta charset="UTF-8"> <!-- Permite visualizar correctamente acentos, letras ñ y caracteres especiales -->
+<title>Tradiciones, Mitos y Realidades - Mes Patrio</title> <!-- Nombre que aparece en la pestaña del navegador -->
 <style>
 
+/* --- ESTILOS GENERALES DEL SITIO --- */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0b4f2c;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Define el tipo de letra base */
+  background-color: #0b4f2c; /* Aplica el color verde oscuro al fondo de la página */
+  color: white; /* Color blanco para todo el texto de la página */
+  text-align: center; /* Centra el contenido general por defecto */
+  margin: 0; /* Elimina los márgenes exteriores predeterminados */
+  padding: 0; /* Elimina los rellenos interiores predeterminados */
 }
 
 header {
-  background-color: #ce2012; 
-  padding: 20px 10px;
+  background-color: #ce2012; /* Fondo de color rojo para la barra superior */
+  padding: 20px 10px; /* Relleno vertical y horizontal del encabezado */
 }
 
 h1 {
-  margin: 0;
-  color: white;
+  margin: 0; /* Elimina los márgenes por defecto del título principal */
+  color: white; /* Color blanco para la letra del título */
 }
 
-/* Estilos de la barra de navegación */
+/* --- ESTILOS DE LA BARRA DE NAVEGACIÓN --- */
+
 nav {
-  background-color: #07331c;
-  padding: 12px 0;
-  border-bottom: 2px solid #f1c40f;
+  background-color: #07331c; /* Fondo verde muy oscuro para la barra de menú */
+  padding: 12px 0; /* Espaciado interno superior e inferior */
+  border-bottom: 2px solid #f1c40f; /* Borde inferior en tono amarillo/dorado */
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  list-style: none; /* Elimina los puntos o viñetas de la lista */
+  margin: 0; /* Quita el margen por defecto de la lista */
+  padding: 0; /* Quita el relleno interno por defecto */
+  display: flex; /* Utiliza un modelo de caja flexible para acomodar los botones */
+  justify-content: center; /* Centra horizontalmente los elementos del menú */
+  flex-wrap: wrap; /* Permite que los elementos se acomoden si la pantalla es reducida */
+  gap: 10px; /* Separación constante de 10px entre cada botón */
 }
 
 nav li {
-  display: inline;
+  display: inline; /* Coloca los elementos de la lista en una sola línea horizontal */
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 14px;
-  background-color: #0b4f2c;
-  border: 1px solid #f1c40f;
-  border-radius: 4px;
-  font-size: 0.9em;
+  color: white; /* Color de texto blanco para los enlaces */
+  text-decoration: none; /* Elimina el subrayado azul predeterminado de los hipervínculos */
+  font-weight: bold; /* Pone el texto de las pestañas en negrita */
+  padding: 8px 14px; /* Relleno interno para darle forma de botón a cada enlace */
+  background-color: #0b4f2c; /* Fondo verde para cada botón */
+  border: 1px solid #f1c40f; /* Borde delgado dorado en cada botón */
+  border-radius: 4px; /* Redondea levemente las esquinas de los botones */
+  font-size: 0.9em; /* Ajusta el tamaño de la fuente del menú */
 }
 
 nav a:hover {
-  background-color: #ce2012;
-  color: white;
+  background-color: #ce2012; /* Cambia el fondo a rojo cuando pasas el cursor por encima */
+  color: white; /* Mantiene el color de texto blanco en la interacción */
 }
 
+/* --- ESTILOS DEL CONTENEDOR DE CONTENIDO --- */
+
 .caja-principal {
-  background-color: #0d5c33;
-  border: 3px solid #f1c40f; 
-  width: 80%;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 25px;
-  text-align: left;
+  background-color: #0d5c33; /* Fondo verde para el contenedor central */
+  border: 3px solid #f1c40f; /* Borde grueso en color dorado/amarillo */
+  width: 80%; /* Define que el ancho sea el 80% de la pantalla */
+  max-width: 800px; /* Limita el ancho máximo a 800 píxeles */
+  margin: 30px auto; /* Centra la caja horizontalmente y añade margen vertical */
+  padding: 25px; /* Espaciado interno entre el borde y el contenido */
+  text-align: left; /* Alinea todo el contenido dentro de esta caja a la izquierda */
 }
 
 h2 {
-  color: #f1c40f;
-  border-bottom: 2px solid #ce2012;
-  padding-bottom: 5px;
-  margin-top: 10px;
+  color: #f1c40f; /* Texto dorado para los títulos principales de sección */
+  border-bottom: 2px solid #ce2012; /* Subrayado en color rojo debajo de los títulos h2 */
+  padding-bottom: 5px; /* Separación interna entre el texto y la línea roja */
+  margin-top: 10px; /* Margen superior */
 }
 
 h3 {
-  color: #f1c40f;
+  color: #f1c40f; /* Texto de color dorado para los subtítulos h3 */
 }
 
 p, li {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.1em; /* Ajusta el tamaño del texto a uno ligeramente mayor */
+  line-height: 1.6; /* Aumenta la distancia vertical entre renglones */
 }
 
 .resaltado {
-  color: #f1c40f;
-  font-weight: bold;
+  color: #f1c40f; /* Aplica el tono dorado a las palabras clave */
+  font-weight: bold; /* Transforma el texto seleccionado a negrita */
 }
 
+/* --- ESTILOS DEL PIE DE PÁGINA --- */
+
 footer {
-  margin-top: 40px;
-  padding: 10px;
-  background-color: #07331c;
-  font-size: 14px;
-  color: #ccc;
-  text-align: center;
+  margin-top: 40px; /* Espacio superior respecto al resto del contenido */
+  padding: 10px; /* Relleno interior */
+  background-color: #07331c; /* Fondo verde oscuro para la franja inferior */
+  font-size: 14px; /* Tamaño de letra reducido */
+  color: #ccc; /* Texto en color gris claro */
+  text-align: center; /* Centra el texto en el pie de página */
 }
 
 </style>
 </head>
 <body>
 
+<!-- ENCABEZADO SUPERIOR -->
 <header>
-  <h1>MES PATRIO</h1>
+  <h1>MES PATRIO</h1> <!-- Título principal de la página -->
 </header>
 
+<!-- SECCIÓN DE NAVEGACIÓN -->
 <section>
   <nav>
-    <ul>
-      <li><a href="index.html">inicio</a></li>
-      <li><a href="tradicionesmitos.html">tradicion y mitos</a></li>
-      <li><a href="personajes.html">personajes</a></li>
-      <li><a href="fechasimportantes.html">fechas importantes</a></li>
+    <ul> <!-- Lista de enlaces organizada como barra de navegación -->
+      <li><a href="index.html">inicio</a></li> <!-- Enlace a la página Inicio -->
+      <li><a href="tradicionesmitos.html">tradicion y mitos</a></li> <!-- Enlace a la página actual -->
+      <li><a href="personajes.html">personajes</a></li> <!-- Enlace a la sección Personajes -->
+      <li><a href="fechasimportantes.html">fechas importantes</a></li> <!-- Enlace a Fechas Importantes -->
     </ul>
   </nav>
 </section>
 
+<!-- CONTENEDOR PRINCIPAL -->
 <div class="caja-principal">
 
   <h2>Tradiciones del Mes Patrio</h2>
   <h3>El Grito de Independencia</h3>
-  <p>Cada 15 de septiembre, los mexicanos se reúnen para conmemorar el llamado de Miguel Hidalgo en 1810.</p>
+  <p>Cada 15 de septiembre, los mexicanos se reúnen para conmemorar el llamado de Miguel Hidalgo en 1810.</p> <!-- Descripción del evento -->
   
   <h3>Ceremonias y eventos escolares</h3>
-  <p>Se realizan honores a la bandera, desfiles y actividades culturales en las escuelas.</p>
+  <p>Se realizan honores a la bandera, desfiles y actividades culturales en las escuelas.</p> <!-- Descripción de las actividades escolares -->
   
   <h3>Música de mariachi</h3>
-  <p>Expresión musical típica que acompaña todas las celebraciones patrias.</p>
+  <p>Expresión musical típica que acompaña todas las celebraciones patrias.</p> <!-- Descripción sobre la música festiva -->
 
   <h2>Mitos y realidades</h2>
-  <ul>
+  <ul> <!-- Lista que contrasta mitos y realidades históricas -->
     <li>
-      <span class="resaltado">Mito:</span> Miguel Hidalgo tocó personalmente la campana.<br>
-      <strong>Realidad:</strong> Existen versiones de que mandó a alguien más a hacerla sonar.
+      <span class="resaltado">Mito:</span> Miguel Hidalgo tocó personalmente la campana.<br> <!-- Texto destacado con etiqueta span -->
+      <strong>Realidad:</strong> Existen versiones de que mandó a alguien más a hacerla sonar. <!-- Aclaración histórica en negrita -->
     </li>
-    <br>
+    <br> <!-- Salto de línea para separar las listas -->
     <li>
       <span class="resaltado">Mito:</span> La Independencia terminó el 16 de septiembre de 1810.<br>
       <strong>Realidad:</strong> Ese día inició; se consumó hasta el 27 de septiembre de 1821.
@@ -147,8 +157,9 @@ footer {
 
 </div>
 
+<!-- PIE DE PÁGINA -->
 <footer>
-  <p>genesis lopez 5-i</p>
+  <p>genesis lopez 5-i</p> <!-- Muestra el nombre del autor/estudiante -->
 </footer>
 
 </body>
