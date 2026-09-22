@@ -1,113 +1,118 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Inicio del documento HTML en español -->
 <head>
-<meta charset="UTF-8">
-<title>Inicio y Línea de Tiempo - Mes Patrio</title>
+<meta charset="UTF-8"> <!-- Define la codificación de caracteres (soporta acentos y ñ) -->
+<title>Inicio y Línea de Tiempo - Mes Patrio</title> <!-- Título que aparece en la pestaña del navegador -->
+
 <style>
+/* --- ESTILOS CSS --- */
 
 body {
-font-family: Arial, sans-serif;
-background-color: #0b4f2c; 
-color: white;
-text-align: center;
-margin: 0;
-padding: 0;
+font-family: Arial, sans-serif; /* Define la tipografía principal */
+background-color: #0b4f2c; /* Color de fondo verde oscuro */
+color: white; /* Color del texto general en blanco */
+text-align: center; /* Centra el texto en la página */
+margin: 0; /* Elimina márgenes externos por defecto */
+padding: 0; /* Elimina rellenos internos por defecto */
 }
 
 header {
-background-color: #ce2012; 
-padding: 20px 10px;
+background-color: #ce2012; /* Fondo rojo para el encabezado */
+padding: 20px 10px; /* Relleno superior/inferior y lateral */
 }
+
 h1 {
-margin: 0;
-color: white;
+margin: 0; /* Quita el margen predeterminado del título */
+color: white; /* Texto del título en blanco */
 }
 
 .caja-principal {
-background-color: #0d5c33;
-border: 3px solid #f1c40f; 
-width: 80%;
-max-width: 800px;
-margin: 30px auto;
-padding: 25px;
-text-align: left;
+background-color: #0d5c33; /* Fondo verde un poco más claro */
+border: 3px solid #f1c40f; /* Borde sólido de color dorado/amarillo */
+width: 80%; /* Ancho relativo del contenedor */
+max-width: 800px; /* Ancho máximo permitido */
+margin: 30px auto; /* Centra la caja horizontalmente con margen arriba/abajo */
+padding: 25px; /* Espacio interno dentro de la caja */
+text-align: left; /* Alinea el texto dentro de la caja a la izquierda */
 }
 
 h2 {
-color: #f1c40f;
-border-bottom: 2px solid #ce2012;
-padding-bottom: 5px;
-margin-top: 10px;
+color: #f1c40f; /* Color dorado para subtítulos */
+border-bottom: 2px solid #ce2012; /* Línea roja debajo del subtítulo */
+padding-bottom: 5px; /* Espacio entre el texto y la línea */
+margin-top: 10px; /* Margen superior */
 }
-p, li {
 
-font-size: 1.1em;
-line-height: 1.6;
+p, li {
+font-size: 1.1em; /* Aumenta ligeramente el tamaño de fuente */
+line-height: 1.6; /* Aumenta el interlineado para mejor lectura */
 }
 
 .resaltado {
-color: #f1c40f;
-font-weight: bold;
+color: #f1c40f; /* Texto en color dorado */
+font-weight: bold; /* Texto en negrita */
 }
 
 footer {
-margin-top: 40px;
-padding: 10px;
-background-color: #07331c;
-font-size: 14px;
-color: #ccc;
-text-align: center;
+margin-top: 40px; /* Distancia superior con los elementos de arriba */
+padding: 10px; /* Relleno interno */
+background-color: #07331c; /* Fondo verde muy oscuro */
+font-size: 14px; /* Tamaño de letra pequeño */
+color: #ccc; /* Texto gris claro */
+text-align: center; /* Texto centrado */
 }
 </style>
 </head>
 <body>
 
+<!-- ENCABEZADO -->
 <header>
-<h1>MES PATRIO</h1>
+<h1>MES PATRIO</h1> <!-- Título principal de la página -->
 </header>
 
+<!-- SECCIÓN DE NAVEGACIÓN -->
 <section>
 	<nav>
-		<u1>
-			<li><a href="index.html">inicio</a></li>
-             <li><a href="tradicionesmitos.html">tradicion y mitos</a></li>
-             <li><a href="personajes.html">personajes</a></li>
-             <li><a href="fechasimportantes.html">fechas importantes</a></li>
-</u1>
-</nav>
+		<!-- Nota: Cambié <u1> por <ul> para corregir el error tipográfico en la etiqueta de lista -->
+		<ul>
+			<li><a href="index.html">inicio</a></li> <!-- Enlace a Inicio -->
+			<li><a href="tradicionesmitos.html">tradicion y mitos</a></li> <!-- Enlace a Tradiciones y Mitos -->
+			<li><a href="personajes.html">personajes</a></li> <!-- Enlace a Personajes -->
+			<li><a href="fechasimportantes.html">fechas importantes</a></li> <!-- Enlace a Fechas Importantes -->
+		</ul>
+	</nav>
 </section>
+
+<!-- CONTENEDOR PRINCIPAL -->
 <div class="caja-principal">
 
 <h2>Introducción</h2>
 <p>Septiembre es conocido como el <strong>Mes Patrio</strong> en México, ya que
 durante este mes se conmemoran acontecimientos importantes relacionados con la historia
-y la Independencia del país.</p>
+y la Independencia del país.</p> <!-- Párrafo introductorio con texto en negrita -->
+
 <p>Es una época en la que los mexicanos recuerdan a los personajes que participaron
 en la lucha por la libertad y celebran las tradiciones, símbolos y valores que forman parte de
 nuestra identidad nacional.</p>
 
 <h2>Línea de tiempo</h2>
-<ul>
-<li><span class="resaltado">30/09/1765:</span> Nacimiento de José María Morelos y
-Pavón.</li>
-<li><span class="resaltado">15/09/1810:</span> Grito de Dolores, inicio del
-movimiento.</li>
-
-<li><span class="resaltado">16/09/1810:</span> Inicio oficial de la lucha por la
-Independencia.</li>
-<li><span class="resaltado">14/09/1813:</span> Presentación de los "Sentimientos de
-la Nación".</li>
-<li><span class="resaltado">27/09/1821:</span> Entrada del Ejército Trigarante y
-consumación.</li>
+<ul> <!-- Lista con eventos históricos y fechas destacadas -->
+<li><span class="resaltado">30/09/1765:</span> Nacimiento de José María Morelos y Pavón.</li>
+<li><span class="resaltado">15/09/1810:</span> Grito de Dolores, inicio del movimiento.</li>
+<li><span class="resaltado">16/09/1810:</span> Inicio oficial de la lucha por la Independencia.</li>
+<li><span class="resaltado">14/09/1813:</span> Presentación de los "Sentimientos de la Nación".</li>
+<li><span class="resaltado">27/09/1821:</span> Entrada del Ejército Trigarante y consumación.</li>
 <li><span class="resaltado">13/09/1847:</span> Batalla de Chapultepec.</li>
 </ul>
 </div>
-  
-<img src="snoppy mexicano.jpg" alt="snoppy mexicano">
 
+<!-- IMAGEN -->
+<img src="snoppy mexicano.jpg" alt="snoppy mexicano"> <!-- Muestra una imagen local con su texto alternativo -->
 
+<!-- PIE DE PÁGINA -->
 <footer>
-<p>genesis lopez 5-i</p>
+<p>genesis lopez 5-i</p> <!-- Créditos del autor/estudiante -->
 </footer>
+
 </body>
 </html>
