@@ -1,86 +1,94 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara que el documento utiliza el estándar HTML5 -->
+<html lang="es"> <!-- Inicio del documento con idioma en español -->
 <head>
-  <meta charset="UTF-8">
-  <title>Fechas Importantes</title>
+  <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales como acentos y la ñ -->
+  <title>Fechas Importantes</title> <!-- Título visible en la pestaña del navegador -->
+
   <style>
+    /* --- ESTILOS CSS --- */
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #0b4f2c;
-      color: white;
-      text-align: center;
-      margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif; /* Define la fuente tipográfica */
+      background-color: #0b4f2c; /* Color de fondo verde oscuro */
+      color: white; /* Color blanco para el texto general */
+      text-align: center; /* Alinea el texto al centro */
+      margin: 0; /* Elimina márgenes exteriores */
+      padding: 0; /* Elimina rellenos interiores */
     }
 
     header {
-      background-color: #ce2012;
-      padding: 20px 10px;
+      background-color: #ce2012; /* Fondo rojo para la barra superior */
+      padding: 20px 10px; /* Espaciado interno superior/inferior y lados */
     }
 
     h1 {
-      margin: 0;
-      color: white;
+      margin: 0; /* Quita el espacio exterior del título */
+      color: white; /* Color blanco para el título principal */
     }
 
     .caja-principal {
-      background-color: #0d5c33;
-      border: 3px solid #f1c40f;
-      width: 80%;
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 25px;
-      text-align: left;
+      background-color: #0d5c33; /* Fondo verde para la caja contenedora */
+      border: 3px solid #f1c40f; /* Borde dorado alrededor de la caja */
+      width: 80%; /* Ancho de la caja respecto a la pantalla */
+      max-width: 800px; /* Ancho máximo permitido en píxeles */
+      margin: 30px auto; /* Centra la caja y da margen arriba y abajo */
+      padding: 25px; /* Espacio interior entre borde y texto */
+      text-align: left; /* Alinea el contenido interno a la izquierda */
     }
 
     h2 {
-      color: #f1c40f;
-      border-bottom: 2px solid #ce2012;
-      padding-bottom: 5px;
-      margin-top: 10px;
+      color: #f1c40f; /* Color dorado para el subtítulo */
+      border-bottom: 2px solid #ce2012; /* Línea roja debajo del subtítulo */
+      padding-bottom: 5px; /* Espacio entre el texto del h2 y la línea roja */
+      margin-top: 10px; /* Espacio superior */
     }
 
     p, li {
-      font-size: 1.1em;
-      line-height: 1.6;
+      font-size: 1.1em; /* Tamaño de letra ligeramente mayor al normal */
+      line-height: 1.6; /* Separación vertical entre líneas de texto */
     }
 
     .resaltado {
-      color: #f1c40f;
-      font-weight: bold;
+      color: #f1c40f; /* Aplica color dorado a elementos específicos */
+      font-weight: bold; /* Pone el texto en negrita */
     }
 
     footer {
-      margin-top: 40px;
-      padding: 10px;
-      background-color: #07331c;
-      font-size: 14px;
-      color: #ccc;
-      text-align: center;
+      margin-top: 40px; /* Distancia respecto al elemento superior */
+      padding: 10px; /* Relleno dentro del pie de página */
+      background-color: #07331c; /* Fondo verde muy oscuro */
+      font-size: 14px; /* Tamaño de letra pequeño */
+      color: #ccc; /* Texto en gris claro */
+      text-align: center; /* Centra el texto del pie de página */
     }
   </style>
 </head>
 <body>
 
+  <!-- ENCABEZADO -->
   <header>
-    <h1>FECHAS IMPORTANTES DE LA INDEPENDENCIA</h1>
+    <h1>FECHAS IMPORTANTES DE LA INDEPENDENCIA</h1> <!-- Título principal -->
   </header>
 
-   <section>
-  <nav>
-    <u1>
-      <li><a href="index.html">inicio</a></li>
-             <li><a href="tradicionesmitos.html">tradicion y mitos</a></li>
-             <li><a href="personajes.html">personajes</a></li>
-             <li><a href="fechasimportantes.html">fechas importantes</a></li>
-</u1>
-</nav>
-</section>
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <section>
+    <nav>
+      <!-- Corrección: Se cambió <u1> por <ul> para usar la etiqueta correcta de listas -->
+      <ul>
+        <li><a href="index.html">inicio</a></li> <!-- Enlace a Inicio -->
+        <li><a href="tradicionesmitos.html">tradicion y mitos</a></li> <!-- Enlace a Tradiciones -->
+        <li><a href="personajes.html">personajes</a></li> <!-- Enlace a Personajes -->
+        <li><a href="fechasimportantes.html">fechas importantes</a></li> <!-- Enlace a Fechas Importantes -->
+      </ul>
+    </nav>
+  </section>
 
+  <!-- CONTENEDOR DE CONTENIDO -->
   <div class="caja-principal">
 
-    <h2>Fechas Clave</h2>
-    <ul>
+    <h2>Fechas Clave</h2> <!-- Subtítulo de la sección -->
+
+    <ul> <!-- Lista de fechas importantes -->
       <li><span class="resaltado">16 de Septiembre de 1810:</span> Grito de Dolores e inicio de la lucha por la Independencia.</li>
       <li><span class="resaltado">28 de Septiembre de 1810:</span> Toma de la Alhóndiga de Granaditas en Guanajuato.</li>
       <li><span class="resaltado">30 de Julio de 1811:</span> Ejecución de Miguel Hidalgo en Chihuahua.</li>
@@ -94,8 +102,9 @@
 
   </div>
 
+  <!-- PIE DE PÁGINA -->
   <footer>
-    <p>genesis lopez 5-i</p>
+    <p>genesis lopez 5-i</p> <!-- Autoría/créditos -->
   </footer>
 
 </body>
